@@ -1,0 +1,128 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification-badge {
+  background-color: red;
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user img {
+  border: 2px solid orange;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px;
+    justify-content: space-between;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .icons {
+    gap: 15px;
+  }
+
+  .icons .notification-badge {
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+  }
+
+  .user span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .icons {
+    gap: 10px;
+  }
+
+  .icons .notification-badge {
+    width: 10px;
+    height: 10px;
+    font-size: 8px;
+  }
+
+  .user span {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 380px) {
+    .navbar {
+      padding: 8px;
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .logo h1 {
+      font-size: 16px;
+    }
+  
+    .icons {
+      gap: 7px;
+    }
+  
+    .icons .notification-badge {
+      width: 10px;
+      height: 10px;
+      font-size: 8px;
+    }
+  
+    .user span {
+      font-size: 14px;
+    }
+  }
+  
